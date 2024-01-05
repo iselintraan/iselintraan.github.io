@@ -1,69 +1,34 @@
-@media(orientation: landscape){
-    body{
-        margin: 0;
-    }
-    .wrapper{
-        display: grid;
-        margin: auto;
-        height: max-content;
-        width: 80vw;
-        grid-template-columns: repeat(2);
-        grid-template-rows: 80vh 40vh 80vh 30vh;
-        gap: 5em;
-        grid-template-areas:
-           "logo logo"
-           "head asid"
-           "arti main"
-           "foot foot"
-            ;
-        }
-    }
-/* gjør dette senere 
-@media(orientation: portrait){
-    body{
-        margin: 0;
-    }
-    .wrapper{
-        display: grid;
-        margin: auto;
-        height: auto;
-        width: 80vw;
-        grid-template-columns: repeat(4,1fr);
-        gap: 0.5em;
-        grid-template-areas:
-           "logo head head asid"
-           "arti main main asid"
-           "arti main main asid"
-           "foot foot foot foot"
-        ;
-     }
-} */ 
-.griditem{
-    border: 1px solid black
-}
-
-nav{ 
-    height: 10vh;
-    border: 1px solid black;
-    margin-bottom: 5em;
-}
-#logo{
-    grid-area: logo;
-    background-image: 
-    url();
-}
-.rowTwoLeft{
-    grid-area: head;
-}
-.rowTwoRight{
-    grid-area: asid;
-}
-.rowThreeLeft{
-    grid-area: arti;
-}
-.rowThreeRight{
-    grid-area: main;
-}
-footer{
-    grid-area: foot;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <p>nav</p>
+    </nav>
+    <div class="wrapper">
+    <div id="logo" class="griditem">
+        <p> <b>logo</b>logo </p>
+    </div>
+    <div id="rowTwoLeft" class="griditem">
+        <p>head</p>
+    </div>
+    <div id="rowTwoRight" class="griditem">
+        <p>aside</p>
+    </div>
+    <div id="rowThreeLeft" class="griditem">
+        <p>art</p>
+    </div>
+    <div id="rowThreeRight" class="griditem">
+        <p>main</p>
+    </div>
+    <footer class="griditem">
+        <p>fot</p>
+    </footer>
+</div>
+</body>
+</html>
