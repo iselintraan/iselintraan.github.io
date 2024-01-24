@@ -1,0 +1,130 @@
+*{
+    font-family: 'Silkscreen', sans-serif;
+}
+@media(orientation: landscape){
+    body{
+        margin: 0;
+        text-align: center;
+    }
+    .wrapper{
+        display: grid;
+        margin: auto;
+        height: max-content;
+        width: 80%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 80vh 80vh;
+        gap: 5em;
+        grid-template-areas:
+           "fir sec"
+           "thi fou"
+            ;
+        }
+    }
+
+@media(orientation: portrait){
+    body{
+        margin: 0;
+
+    }
+    .wrapper{
+        display: grid;
+        margin: auto;
+        height: auto;
+        width: 80%;
+        grid-template-columns: repeat(1);
+        gap: 0.5em;
+        grid-template-areas:
+          "fir"
+          "sec"
+          "thi"
+          "fou"
+        ;
+     }
+} 
+#first{
+    grid-area: fir;
+}
+#second{
+    grid-area: sec;
+}
+#third{
+    grid-area: thi;
+}
+#fourth{
+    grid-area: fou;
+}
+.griditem{
+    border: 1px black solid;
+}
+
+.darkmode{
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+.darkModeFoot{
+    background-color: #3D3D3D;
+    color: #ffffff;
+}
+.darkModeNav{
+    background-color: #3D3D3D; 
+    color: #ffffff;
+}
+
+.pinkmode{
+    background-color: pink;
+    color: #ffffff;
+}
+.pinkModeFoot{
+    background-color: hotpink;
+    color: #ffffff;
+}
+.pinkModeNav{
+    background-color: hotpink;
+    color: #ffffff;
+}
+
+
+button{
+    background-color: pink;
+}
+
+footer{
+    height: 100%;
+    margin-top: 20px;
+    border: solid 1px black;
+    text-align: center;
+    background-color: #C2C2C2;
+}
+
+nav{ 
+    margin-bottom: 20px;
+    background-color: #C2C2C2;
+}
+nav ul{
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    list-style-type: none;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 0.5em;
+    gap: 2em;
+    background-size: cover;
+    justify-content: center;
+    color: #ffffff;
+}
+nav ul li{
+    border: 1px solid black;
+    width: 100px;
+    height: 4em;
+    padding: 10px;
+    text-align: center;
+}
+nav ul li:hover{
+    font-weight: bold;
+    color: black;
+}
+nav ul a{
+    text-decoration: none;
+    color: #ffffff;
+}

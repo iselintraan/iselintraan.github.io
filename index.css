@@ -1,0 +1,171 @@
+*{
+    font-family: 'Silkscreen', sans-serif;
+    
+}
+@media(orientation: landscape){
+    body{
+        margin: 0;
+        text-align: center;
+    }
+    .wrapper{
+        display: grid;
+        margin: auto;
+        height: max-content;
+        width: 80%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 100vh 60vh 80vh;
+        gap: 5em;
+        grid-template-areas:
+           "logo logo"
+           "head asid"
+           "arti main"
+            ;
+        }
+    }
+
+@media(orientation: portrait){
+    body{
+        margin: 0;
+
+    }
+    .wrapper{
+        display: grid;
+        margin: auto;
+        height: auto;
+        width: 80%;
+        grid-template-columns: repeat(1);
+        gap: 0.5em;
+        grid-template-areas:
+          "logo"
+          "head"
+          "asid"
+          "arti"
+          "main"
+        ;
+     } 
+    
+} 
+
+
+nav{ 
+    margin-bottom: 20px;
+    background-color: #C2C2C2;
+
+}
+#logo{
+    grid-area: logo;
+}
+#logoimage{
+    width: 100%;
+    height: 100vh;
+}
+#rowTwoLeft{
+    grid-area: head;
+    text-align: center;
+    
+}
+#rowTwoRight{
+    grid-area: asid;
+
+}
+#rowThreeLeft{
+    grid-area: arti;
+}
+#artimage{
+    height: 80vh;
+    width: 100%;
+}
+#rowThreeRight{
+    grid-area: main;
+}
+#mainimage{
+    height: 80vh;
+    width: 100%;
+}
+#cafeimage{
+    height: 60vh;
+    width: 100%;
+}
+
+footer{
+    height: 100%;
+    margin-top: 70px;
+    border: solid 1px black;
+    text-align: center;
+    background-color: #C2C2C2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+nav ul{
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    list-style-type: none;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 0.5em;
+    gap: 2em;
+    background-size: cover;
+    justify-content: center;
+    
+    
+}
+nav ul li{
+    border: 1px solid black;
+    width: 100px;
+    height: 4em;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+nav ul li:hover{
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+h1{
+   text-align: center;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.darkmode{
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+.darkModeFoot{
+    background-color: #3D3D3D;
+    color: #ffffff;
+}
+.darkModeNav{
+    background-color: #3D3D3D; 
+    color: #ffffff;
+}
+
+.pinkmode{
+    background-color: pink;
+    color: #ffffff;
+}
+.pinkModeFoot{
+    background-color: hotpink;
+    color: #ffffff;
+}
+.pinkModeNav{
+    background-color: hotpink;
+    color: #ffffff;
+}
+
+
+button{
+    background-color: pink;
+}
+#rammeOutput{
+    border: solid black 1px;
+    width: 95.5%;
+    height: 31vh;
+    padding: 10px;
+}
