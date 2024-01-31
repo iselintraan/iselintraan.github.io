@@ -12,11 +12,10 @@
         height: max-content;
         width: 80%;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 80vh 80vh;
+        grid-template-rows: 80vh;
         gap: 5em;
         grid-template-areas:
            "fir sec"
-           "thi fou"
             ;
         }
     }
@@ -24,6 +23,7 @@
 @media(orientation: portrait){
     body{
         margin: 0;
+        text-align: center;
 
     }
     .wrapper{
@@ -36,69 +36,34 @@
         grid-template-areas:
           "fir"
           "sec"
-          "thi"
-          "fou"
         ;
      }
 } 
-#first{
-    grid-area: fir;
-}
-#second{
-    grid-area: sec;
-}
-#third{
-    grid-area: thi;
-}
-#fourth{
-    grid-area: fou;
-}
-.griditem{
-    border: 1px black solid;
-}
-
-.darkmode{
-    background-color: #1a1a1a;
-    color: #ffffff;
-}
-.darkModeFoot{
-    background-color: #3D3D3D;
-    color: #ffffff;
-}
-.darkModeNav{
-    background-color: #3D3D3D; 
-    color: #ffffff;
-}
-
-.pinkmode{
-    background-color: pink;
-    color: #ffffff;
-}
-.pinkModeFoot{
-    background-color: hotpink;
-    color: #ffffff;
-}
-.pinkModeNav{
-    background-color: hotpink;
-    color: #ffffff;
-}
-
 
 button{
     background-color: pink;
 }
-
-footer{
-    height: 100%;
-    margin-top: 20px;
-    border: solid 1px black;
-    text-align: center;
-    background-color: #C2C2C2;
+#first{
+    grid-area: fir;
+    background-color:#ffffff;
+   
+    
 }
+#second{
+    grid-area: sec;
+}
+.projectstext{
+    margin: 0;
+    color: #ffffff;
+}
+
+
 
 nav{ 
     margin-bottom: 20px;
     background-color: #C2C2C2;
+    position: sticky;
+    top: 0;
 }
 nav ul{
     display: flex;
@@ -126,5 +91,65 @@ nav ul li:hover{
 }
 nav ul a{
     text-decoration: none;
+    color: #ffffff;
+}
+.wrapper a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+#cafeimage{
+    height: 80vh;
+    width: 100%;
+    background-image: url("cafecolor.jpeg");
+    background-size: cover;
+}
+#balconyimage{
+    height: 80vh;
+    width: 100%;
+    background-image: url("balcony.jpeg");
+    background-size: cover;
+}
+
+
+
+footer{
+    height: 100%;
+    margin-top: 20px;
+    border: solid 1px black;
+    text-align: center;
+    background-color: #C2C2C2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.darkmode{
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+.darkModeFoot{
+    background-color: #3D3D3D;
+    color: #ffffff;
+}
+.darkModeNav{
+    background-color: #3D3D3D; 
+    color: #ffffff;
+}
+
+.pinkmode{
+    background-color: pink;
+    color: #ffffff;
+}
+.pinkModeFoot{
+    background-color: #FF9AAA;
+    color: #ffffff;
+}
+.pinkModeNav{
+    background-color: #FF9AAA;
     color: #ffffff;
 }

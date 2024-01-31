@@ -9,38 +9,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
 </head>
+
 <button onclick="toggleDarkMode()">darkmode</button>
 <button onclick="togglePinkMode()">pinkmode</button>
+
 <nav id="navIsOut">
      <ul>
         <label for="buttonAboutMe"><li>
            <p>about me</p>
         </li></label>
+
         <a href="cv.html"><li>
             <p>CV</p>
         </li></a>
+
         <a href="/PROJEKTER/first.html"><li>
             <p>PROJECTS</p>
         </li></a>
        
      </ul>
  </nav>
+
 <body id="bodyForStyle">
     
     <h1> iselin tran</h1>
     <div class="wrapper">
 
-    <div id="logo" class="gridi tem">
-        <img id="logoimage" src="logobilde.jpeg" alt="bilde!">
+    <div id="logo" class="griditem">
+        <img id="logoimage" src="logobilde.jpeg" alt="picture of piano">
     </div>
     
     <div id="rowTwoLeft" class="griditem">
-        <a href="/PROJEKTER/first.html"><img id="cafeimage" src="cafe.jpeg" alt="cafee"></a>
+        <a href="/PROJEKTER/first.html"><img id="cafeimage" src="cafe.jpeg" alt="picture of a cafe"></a>
     </div>
 
     <div id="rowTwoRight" class="griditem">
-        <h2>Hei! Velkommen til min side!</h2>
-        <p>Level 1079 candycrush soda</p>
+        <h2>Welcome to my page!</h2>
+        <p>My name is Iselin Tran and I am 17 years old</p>
         <br>    
         <p>Ask a question!</p>
         <select id="aboutMeOption">
@@ -50,30 +55,31 @@
             <option value="hobby">Hobby</option>
             <option value="projects">other projects?</option>
         </select>
+
         <button onclick="addToAboutMe()" id="buttonAboutMe" >ABOUT ME</button>
         <div id="rammeOutput">
         <p id="outputAboutMe"></p>
-    </div>
+        </div>
     </div>
 
     <div id="rowThreeLeft" class="griditem">
         <div id="art">
-        <img id="artimage" src="backgroundforside.jpeg" alt="bilde!">
+        <img id="artimage" src="backgroundforside.jpeg" alt="picture of a chair">
         </div>
     </div>
 
     <div id="rowThreeRight" class="griditem">
-        <img id="mainimage" src="pool.jpeg" alt="basseng">
+        <img id="mainimage" src="pool.jpeg" alt="picture of a pool">
     </div>
-
-    </div>
-   
+     </div>
 </body>
+
  <footer id="foot">
-        <h2>CONTACT ME! </h2>
-        <p>IG: iselin.traan</p> 
-        <p>DC: iselin.traan</p> 
-        <p>GMAIL: iselintraan@gmail.com</p> 
+    <h2>CONTACT ME! </h2>
+    <br>
+    <a href="https://www.instagram.com/iselin.traan/"><p>IG: iselin.traan</p></a> 
+    <p>DC: iselin.traan</p> 
+    <a href="mailto:iselintraan@gmail.com"><p>GMAIL: iselintraan@gmail.com</p></a>
     </footer>
 <script src="index.js"></script>
 </html>
