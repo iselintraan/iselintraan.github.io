@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ønskeliste</title>
+    <link rel="stylesheet" href="digitalliste.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+ 
+<body> 
+    <nav>
+        <ul>
+            <li>
+            <label for="bakgrunnsfarge">Velg bakgrunnsfarge: </label>
+            <input type="color" id="bakgrunnsfarge" value="#f5f5f5">
+            <button onclick="changeBackgroundColor()" id="buttonColor">Endre</button>
+            </li>
+            
+            <li>
+            <label for="listTitle">Velg tittel: </label>
+            <input type="text" name="tittel" id="listTitle" placeholder="Ønske liste til ...! ">
+            <button id="buttonTitle">Ferdig</button>
+            </li>
+            
+            
+            <li>
+            <label for="listDateTime">Velg dato: </label>
+            <input type="date" id="listDateTime">
+            </li>
+            
+        
+            
+            <li>
+            <label for="listCategory">kategori</label>
+            <select id="listCategory">
+                <option value="en">kosmetikk</option>
+                <option value="to">enkelte produkter</option>
+                <option value="tre">underholdning</option>
+            </select>
+            </li>
+        </ul>
+           
+    </nav>
+    <div class="over">
+    <p> <label for="subListCategory">  type</label>
+        <select id="subListCategory">
+            <option value="none"></option>
+            <option value="parfyme">parfyme</option>
+            <option value="hårprodukter">hårprodukter</option>
+            <option value="sminke">sminke</option>
+            <option value="hudpleie">hudpleie</option>
+            <option value="klær">klær</option>
+            <option value="sko">sko</option>
+            <option value="pc-spill">pc-spill</option>
+            <option value="leker">leker</option>
+        </select>
+    
+        <label for="listContent">Legg til innhold: </label>
+        <input type="text" id="listContent" placeholder="Produkter">
+      
+        <label for="kostnad">kr</label>
+        <input type="number" id="kostnad">
+
+    <button id="buttonContent">ferdig</button>
+        
+    </p>
+
+    </div>
+
+
+<div class="output">
+<h1 id="outputTitle"></h1>
+<div class="grid">
+    <div class="griditem" id="left">
+        
+        <h2>kosmetikk</h2>
+        <p>
+            <button id="sortLeftAlfa">sorter alfabetisk!</button>
+            <button id="sortLeftNumi">sorter numerisk</button>
+        </p>
+        <div id="containerLeft"></div>
+    </div>
+
+    <div class="griditem" id="mid">
+        <h2>enkelte produkter</h2>
+        <p>
+            <button id="sortMiddleAlfa">sorter alfabetisk!</button>
+            <button id="sortMiddleNumi">sorter numerisk</button>
+        </p>
+        <div id="containerMiddle"></div>
+    </div>
+
+    <div class="griditem" id="right">
+        <h2>underholdning</h2>
+        <p>
+            <button id="sortRightAlfa">sorter alfabetisk!</button>
+            <button id="sortRightNumi">sorter numerisk</button>
+        </p>
+        <div id="containerRight"></div>
+    </div>
+</div>
+
+</body>
+<script src="digitalliste.js"> </script>
+ 
+</html>

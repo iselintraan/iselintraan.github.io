@@ -1,0 +1,50 @@
+*{
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.over{
+    text-align: center;
+}
+.output{
+    text-align: center;
+    height: 70em;
+    margin: auto;
+}
+.grid{
+    margin: auto;
+    display: grid;
+    grid-template-areas: "left midl righ";
+
+}
+#left{
+    grid-area: left;
+}
+#mid{
+    grid-area: midl;
+}
+#right{
+    grid-area: righ;
+}
+.griditem{
+    border: dotted 15px red;
+    height: 70em;
+    gap: 0.7em;
+    background-color: white;
+    margin: 1em;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 0.5em;
+    justify-content: center;
+    margin: auto;
+    background-color: white;
+}
+nav ul li{
+    margin: auto;
+    gap: 0.5em;
+}
